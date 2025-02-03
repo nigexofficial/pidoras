@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>-> nigex.xyz best website ever <-</title>
-    <meta http-equiv="refresh" content="0;url=https://nigex.xyz">
+    <title>Pidoras - Official Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .section {
+            padding: 50px 0;
+            border-bottom: 1px solid #333;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        button {
+            background-color: #ffcc00;
+            color: #121212;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
 </head>
 <body>
-    <p>nigex.xyz redirect...</p>
-    <a href="https://nigex.xyz" class="btn">Click here if no redirect</a>
+    <div class="container">
+        <div class="section" id="about">
+            <h1>Welcome to Pidoras' Official Website</h1>
+            <p>Started in 2023, Pidoras is a YouTube channel dedicated to entertaining content about anything. From tech to Games and anything, you will have fun for sure!</p>
+            <p>We are proudly partnered with <a href="https://nigex.xyz" target="_blank">NiGex</a>.</p>
+        </div>
+        
+        <div class="section" id="videos">
+            <h2>Latest Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=user_uploads&list=@pidoras" frameborder="0" allowfullscreen></iframe>
+            <br><br>
+            <a href="https://www.youtube.com/@pidoras" target="_blank"><button>Subscribe on YouTube</button></a>
+        </div>
+
+        <div class="section" id="projects">
+            <h2>Projects we made along the way</h2>
+            <a href="https://pidoras.xyz/NLauncher" target="_blank"><button>NLauncher - 2024</button></a>
+            <p>We Partnered with NiGex and made our Minecraft Launcher!</p>
+        </div>
+        <a id="randomImageLink" href="#">
+            <img id="randomImage" src="" alt="Advertisement">
+        </a>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>For business inquiries, email us at: mpasb@pidoras.xyz or DM on tg: t.me/niggerfart69</p>
+        </div>
+        
+        <div class="section" id="partners">
+            <h2>Our Partners</h2>
+            <p><a href="https://nigex.xyz" target="_blank">NiGex</a></p>
+            <p><a href="https://www.youtube.com/@mpasb" target="_blank">MPASB</a></p>
+        </div>
+    </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const images = [
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad1.png', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad2.jpeg', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad3.jpeg', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad4.jpg', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad5.jpeg', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad6.jpg', link: 'https://nigex.xyz' },
+        { src: 'https://cdn.pidoras.xyz/assets/images/advertisements/ad7.png', link: 'https://nigex.xyz/vklog' }
+    ];
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+
+    const imageElement = document.getElementById('randomImage');
+    const linkElement = document.getElementById('randomImageLink');
+
+    if (imageElement && linkElement) {
+        imageElement.src = selectedImage.src;
+        linkElement.href = selectedImage.link;
+    }
+});
+</script>
 </html>
