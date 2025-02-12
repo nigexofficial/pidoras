@@ -62,8 +62,8 @@
             <a href="https://pidoras.xyz/NLauncher" target="_blank"><button>NLauncher - 2024</button></a>
             <p>We Partnered with NiGex and made our Minecraft Launcher!</p>
         </div>
-        <a id="randomImageLink" href="#">
-            <img id="randomImage" src="" alt="Advertisement">
+        <a id="adLink" href="#">
+            <img id="ad" src="" alt="Advertisement">
         </a>
         <div class="section" id="contact">
             <h2>Contact</h2>
@@ -92,8 +92,8 @@
     const randomIndex = Math.floor(Math.random() * images.length);
     const selectedImage = images[randomIndex];
 
-    const imageElement = document.getElementById('randomImage');
-    const linkElement = document.getElementById('randomImageLink');
+    const imageElement = document.getElementById('ad');
+    const linkElement = document.getElementById('adLink');
 
     if (imageElement && linkElement) {
         imageElement.src = selectedImage.src;
